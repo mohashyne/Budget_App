@@ -2,7 +2,8 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 // import "./controllers"
-import "@hotwired/turbo-rails"
 import "popper"
-import "bootstrap"
+import 'bootstrap/dist/js/bootstrap';
+import 'font-awesome-sass';
 // import * as bootstrap from "bootstrap"
+

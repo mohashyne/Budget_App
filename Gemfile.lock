@@ -105,6 +105,8 @@ GEM
     ffi (1.16.3)
     font-awesome-rails (4.7.0.8)
       railties (>= 3.2, < 8.0)
+    font-awesome-sass (6.4.2)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.1)
@@ -243,6 +245,7 @@ GEM
     zeitwerk (2.6.12)
 
 PLATFORMS
+  x86_64-darwin-21
   x86_64-darwin-22
 
 DEPENDENCIES
@@ -252,6 +255,7 @@ DEPENDENCIES
   debug
   devise
   font-awesome-rails
+  font-awesome-sass
   importmap-rails
   jbuilder
   pg (~> 1.1)
