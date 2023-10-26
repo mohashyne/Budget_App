@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'bootstrap';
+@import 'font-awesome';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-color: rgb(249, 249, 249);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-shrink: 1;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 400;
+  font-size: 70px;
+  color: #383737;
+}
+
+.sign_section {
+  padding: 0 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign_up {
+  color: #8f8d8d;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.log_in {
+  color: #fff;
+  background-color: #3878c2;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.logo_container {
+  text-align: center;
+  background-color: rgb(249, 249, 249);
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  padding-top: 32px;
+  padding-bottom: 18px;
+  background-color: #3778c2;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_center {
+  margin-bottom: 50px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 18px;
+  background-color: #3778c2;
+  color: #fff;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.nav_sign_out {
+  color: #fff;
+  margin-right: 12px;
+}
+
+.nav_path {
+  font-size: 1.3rem;
+}
+
+.arrow {
+  height: 18px;
+  margin-left: 12px;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+}
+
+
+
