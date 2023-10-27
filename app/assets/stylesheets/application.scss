@@ -41,6 +41,8 @@ a {
   font-weight: 400;
   font-size: 70px;
   color: #383737;
+  animation: fadeInUp 1s forwards;
+  opacity: 0;
 }
 
 .sign_section {
@@ -120,4 +122,13 @@ a {
 }
 
 
-
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
