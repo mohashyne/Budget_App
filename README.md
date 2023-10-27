@@ -58,7 +58,7 @@
 - [x] **User Registration and Authentication**
 - [x] **Category Management**
 - [x] **Transaction Logging**
-- [x] **Financial Summary**
+- [x] **Financial/Expense Summary**
 - [x] **Transaction History**
 - [x] **Transaction Logging**
 - [x] **Security and Data Validation**
