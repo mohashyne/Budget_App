@@ -1,0 +1,67 @@
+.reg_text_col {
+    color: rgb(132, 132, 132);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .reg_text_col_bold {
+    color: rgb(89, 98, 106);
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .register {
+    color: #8f8d8d;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 0 3%;
+  }
+  
+  .lines {
+    padding: 22px 0;
+    border-bottom: 1px solid #d8d4d4;
+  }
+  
+  input {
+    border: none;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  .sign_up_button_container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .sign_up_button {
+    text-decoration: none;
+    padding: 8px;
+    color: rgb(89, 98, 106);
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(134, 138, 141);
+    border-radius: 4px;
+  }
+  
+
+.welcome_user {
+    background-color: #f8f9fa; 
+    padding: 20px; 
+    border-radius: 8px;
+  }
+  
+  .user_greeting {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  
+  .welcome_message {
+    font-size: 1.2rem; 
+    color: #6c757d; 
+  }
+  
+
+  

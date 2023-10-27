@@ -1,8 +1,16 @@
-<h1>Budget App</h1>
-<p>Welcome to the Best Budget App</p>
+<div class="logo_container">
+  <h1 class="logo">Budget App</h1>
+</div>  
 
-<% if current_user %>
-    <p>Hello <%= current_user.name %></p>
-<% else %>
-    <p>You Are Not logged in</p>
-<% end %>
+<section class="sign_section">
+  <% if current_user %>
+    <div class="welcome_user">
+      <p class="user_greeting">Hello <%= current_user.name.capitalize %></p>
+      <h2 class="welcome_message">Welcome to the Best Budget App</h2>
+      <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-small btn-primary mx-2" %>
+    </div>
+  <% else %>
+    <%= link_to 'Log In', new_user_session_path, class: 'log_in' %>
+    <%= link_to 'Sign Up', new_user_registration_path, class: 'sign_up' %>
+  <% end %>
+</section>

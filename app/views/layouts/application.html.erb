@@ -11,7 +11,9 @@
   </head>
 
   <body>
-  <%= render 'layouts/navbar' %>
+  <% unless controller_name == "main" %>
+       <%= render "layouts/navbar" %>
+     <%end%>
   <% if flash[:notice] %>
       <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
         <%= flash[:notice] %>

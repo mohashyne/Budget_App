@@ -1,4 +1,3 @@
-
 <div class="navbar<%= '_center' if current_page?(groups_path) %>">
   <%= link_to @arrow_path do%>
     <% unless current_page?(groups_path) %>
@@ -6,12 +5,8 @@
     <% end %>
   <% end %>
   <p class="nav_path"><%= "#{@path_description}" %></p>
-  <% if current_user %>
-    <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-small btn-primary mx-2" %>
-  <% else %>
-    <ul class="navbar-nav">
-      <li class="nav-item"><%= link_to "Sign Up", new_user_registration_path, class: "nav-link" %></li>
-      <li class="nav-item"><%= link_to "Sign In", new_user_session_path, class: "nav-link" %></li>
-    </ul>
+
+ <%unless current_page?(groups_path)%>
+   <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-small btn-primary mx-2" %>
   <% end %>
 </div>
