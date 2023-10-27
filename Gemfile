@@ -71,6 +71,8 @@ group :development, :test do
   gem 'webdrivers'
 
   gem 'factory_bot_rails'
+
+  gem 'letter_opener'
 end
 
 group :development do
