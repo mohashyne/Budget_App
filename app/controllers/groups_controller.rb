@@ -29,11 +29,40 @@ class GroupsController < ApplicationController
     @group = current_user.groups.new(group_params)
 
     if @group.save
-      flash[:success] = 'The Category was added successfuly.'
+      flash[:success] = 'The Category was added successfully.'
       redirect_to groups_path
     else
-      flash[:error] = 'Error occured.'
+      flash[:error] = 'Error occurred.'
+      render :new
     end
+  end
+
+  def edit
+    @group = Group.find(params[:id])
+  end
+
+  def update
+    @group = Group.find(params[:id])
+
+    if @group.update(group_params)
+      flash[:success] = 'The Category was updated successfully.'
+      redirect_to groups_path
+    else
+      flash[:error] = 'Error occurred.'
+      render :edit
+    end
+  end
+
+  def destroy
+    @group = Group.find(params[:id])
+
+    if @group.destroy
+      flash[:success] = 'The Category was deleted successfully.'
+    else
+      flash[:error] = 'Error occurred.'
+    end
+
+    redirect_to groups_path
   end
 
   private

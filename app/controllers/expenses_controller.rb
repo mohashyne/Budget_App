@@ -27,6 +27,34 @@ class ExpensesController < ApplicationController
     end
   end
 
+  def edit
+    @expense = Expense.find(params[:id])
+  end
+
+  def update
+    @expense = Expense.find(params[:id])
+
+    if @expense.update(expense_params)
+      flash[:success] = 'The Expense was updated successfully.'
+      redirect_to group_path(@expense.groups[0])
+    else
+      flash[:error] = 'Error occurred.'
+      render :edit
+    end
+  end
+
+  def destroy
+    @expense = Expense.find(params[:id])
+
+    if @expense.destroy
+      flash[:success] = 'The Expense was deleted successfully.'
+    else
+      flash[:error] = 'Error occurred.'
+    end
+
+    redirect_to group_path(@expense.groups[0])
+  end
+
   private
 
   def expense_params

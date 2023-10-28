@@ -155,9 +155,10 @@ And think If you enjoy gift me a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
- - Creative Commons license of the design and Gregoire Vella on Behance for her Original design idea.
- - Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
- - GitHub Docs for providing a wealth of information on Git and GitHub.
+Thanks for the Original design idea by Gregoire [Vella on Behance](https://www.behance.net/gregoirevella) [the author of original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=), [used under Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/).
+Thanks to Microverse for providing the opportunity to learn Git and GitHub in a collaborative environment.
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
