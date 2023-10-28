@@ -1,14 +1,14 @@
 require 'rails_helper'
 
-RSpec.describe Expense, type: :model do
+RSpec.describe ExpenseGroup, type: :model do
   before do
     @user = User.create(id: 10, name: 'HFG', email: 'xxx@xxx.com', password: '123456password')
-    @group = Group.create(user: @user, name: 'My Expenses', icon: 'https://i.pravatar.cc/75?img=02%02')
+    @group = Group.create(author: @user, name: 'My Expenses', icon: 'https://i.pravatar.cc/75?img=02%02')
     @expense = Expense.create(author: @user, name: 'Bike spend', amount: 100)
   end
 
   describe 'validations' do
-    it 'should be valid with valid with expense and group attributes' do
+    it 'should be valid with valid expense and group associations' do
       expense_group = ExpenseGroup.new(expense: @expense, group: @group)
       expect(expense_group).to be_valid
     end

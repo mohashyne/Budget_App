@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before do
-    @user = User.create(id: 10, name: 'HFG', email: 'xxx@xxx.com', password: '123456@password')
+    @user = User.create(name: 'HFG', email: 'xxx@xxx.com', password: '123456@password')
   end
 
   describe 'validations' do
@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       expect(@user.name).to eq('HFG')
     end
 
-    it 'should not be valid if it dont include name' do
+    it 'should not be valid if it doesn\'t include name' do
       @user.name = nil
       expect(@user).not_to be_valid
     end

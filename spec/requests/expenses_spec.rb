@@ -4,7 +4,7 @@ RSpec.describe 'Expenses', type: :request do
   describe 'GET /new' do
     before do
       @user = FactoryBot.create(:user)
-      @group = FactoryBot.create(:group, user: @user)
+      @group = FactoryBot.create(:group, author: @user) # Use the correct association here
       sign_in @user
       get new_group_expense_path(@group)
     end

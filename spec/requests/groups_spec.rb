@@ -4,7 +4,7 @@ RSpec.describe 'Groups', type: :request do
   describe 'GET /new' do
     before do
       user = FactoryBot.create(:user)
-      FactoryBot.create(:group, user:)
+      FactoryBot.create(:group, author: user) # Use the correct association here
       sign_in user
       get new_group_path
     end
@@ -22,7 +22,7 @@ RSpec.describe 'Groups', type: :request do
   describe 'GET /index' do
     before do
       user = FactoryBot.create(:user)
-      FactoryBot.create(:group, user:)
+      FactoryBot.create(:group, author: user) # Use the correct association here
       sign_in user
       get groups_path
     end

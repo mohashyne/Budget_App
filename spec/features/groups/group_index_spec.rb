@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "Visit the index page of 'groups'", type: :feature do
   before do
     user = FactoryBot.create(:user)
-    @group = FactoryBot.create(:group, user:)
+    @group = FactoryBot.create(:group, author: user)
     login_as(user)
   end
 
@@ -29,7 +29,7 @@ describe "Visit the index page of 'groups'", type: :feature do
     expect(page).to have_content 'Bike Spends'
   end
 
-  it 'should redirect to group show after clicking on the a category' do
+  it 'should redirect to group show after clicking on a category' do
     visit groups_path
     click_link 'Bike Spends'
     expect(page).to have_current_path(group_path(@group))
