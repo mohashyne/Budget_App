@@ -69,7 +69,7 @@
 
 ## 💻 Explanatory Video <a name="explanatory-video"></a>
 
-- [Explanatory Video](https://www.loom.com/share/)
+- [Explanatory Video](https://www.loom.com/share/8a80bd70542f4c329b9e727481e80b62?sid=15ef0cf6-f1ae-4df1-9ff6-22cd98b5a9e5)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
