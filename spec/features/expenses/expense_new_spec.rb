@@ -18,7 +18,6 @@ describe "Visit the new page of 'expenses'", type: :feature do
     expect(page).to have_content 'Select categories'
   end
 end
-require 'rails_helper'
 
 describe "Visit the new page of 'expenses'", type: :feature do
   before do
